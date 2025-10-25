@@ -2,7 +2,7 @@ Smart Bus Tracker — Real-Time Bus Monitoring System
 
 This project demonstrates a real-time bus tracking and route visualization system built with FastAPI (backend) and Streamlit (frontend). It simulates live bus movements, displays dynamic routes, calculates delays, and provides ETA updates every few minutes — just like a real-world transport monitoring system.
 
-🚀 Overview
+ Overview
 
 The Smart Bus Tracker solves a common urban problem: lack of visibility into real-time bus movement.
 Using a simulated API, it tracks buses between two cities (e.g., Gondia → Nagpur), visualizes their routes, and updates bus positions automatically every 2 minutes.
@@ -17,15 +17,15 @@ Live ETA and delay status
 
 Interactive bus selection interface
 
-⚙️ Tech Stack
+ Tech Stack
 Component	Technology
 Backend API	FastAPI
 Frontend App	Streamlit
 Visualization	PyDeck (Map Rendering)
 Auto Refresh	Streamlit Autorefresh
 Language	Python 3.12
-Deployment Ready	✅ (can be hosted on GitHub + Render/Streamlit Cloud)
-🧠 How It Works
+Deployment Ready	 (can be hosted on GitHub + Render/Streamlit Cloud)
+ How It Works
 
 Backend (FastAPI)
 
@@ -43,11 +43,11 @@ Buses are listed with timing and type (AC/Non-AC).
 
 On selecting a bus, the system fetches live data and draws:
 
-🗺️ Bus route line
+Bus route line
 
-🚏 Stop markers
+Stop markers
 
-⏱️ Arrival/Delay time dynamically updated
+ Arrival/Delay time dynamically updated
 
  Setup Instructions
 1. Clone the Repository
@@ -57,9 +57,7 @@ cd smart-bus-tracker
 2. Create a Virtual Environment
 python3 -m venv busapp_env
 source busapp_env/bin/activate   
-# OR
-busapp_env\Scripts\activate      
-
+     
 3. Install Dependencies
 pip install -r requirements.txt
 
@@ -69,7 +67,7 @@ uvicorn main:app --reload
 5. Run Frontend (Streamlit)
 streamlit run app_streamlit.py
 
-🧭 Features
+ Features
 
 ✅ Real-time location tracking (auto-refresh every 2 minutes)
 ✅ Route line visualization with all stops
@@ -77,7 +75,7 @@ streamlit run app_streamlit.py
 ✅ Interactive map with hover tooltips
 ✅ Clean and modern interface
 
-🌍 Future Improvements
+ Future Improvements
 
 Integrate real GPS data from public transport APIs
 
